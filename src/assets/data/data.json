@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "name": "test",
+      "place": "ekm",
+      "state": "kerala",
+      "age": 2,
+      "id": 1
+    },
+    {
+      "name": "test2",
+      "place": "ekm",
+      "state": "kerala",
+      "age": 5,
+      "id": 2
+    }
+  ],
+  "comments": []
+}

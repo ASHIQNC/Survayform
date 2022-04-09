@@ -1,0 +1,52 @@
+
+
+nav{
+    background-color: black;
+    width: 100%;
+    overflow: auto;
+    margin: 0;
+    height: 70px;
+    opacity: .8;
+    position: inherit;
+   
+}
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+ul li a{
+    float: right;
+    text-align: center;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100px;
+    text-align: center;
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    
+
+}
+ul li a:hover{
+    color: red;
+}
+
+
+.shop{
+    color: red;
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+
+font-size: 35px;
+margin-left: 50px;
+margin-top: 10px;
+}

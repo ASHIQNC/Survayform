@@ -1,0 +1,66 @@
+<!-- reactive form -->
+
+
+<div class="container">
+    <form [formGroup]="signupForm">
+
+        <!-- name -->
+        <div class="form-group row">
+            <label class="form-label" for="name">enter the username</label>
+
+            <!-- hidden id -->
+            <input formControlName="_id" type="hidden" id="_id" name="_id">
+            <input formControlName="name" type="text" class="form-control" name="name" placeholder="username">
+        </div>
+
+        <!-- place -->
+        <div class="form-group row">
+            <label class="form-label" for="place">enter the place</label>
+            <input formControlName="place" type="text" class="form-control" name="place" placeholder="place">
+
+        </div>
+        <!-- state -->
+        <div class="form-group row">
+            <label class="form-label" for="state">enter the state</label>
+            <input formControlName="state" type="text" class="form-control" name="state" placeholder="state">
+
+        </div>
+        <!-- age -->
+        <div class="form-group row">
+            <label class="form-label" for="age">enter the age</label>
+            <input formControlName="age" type="number" class="form-control" name="age" placeholder="age">
+
+        </div>
+
+        <br>
+        <br>
+
+        <button (click)="details(signupForm)" type="button" class="form-control" [disabled]="!signupForm.valid"> add
+            data</button>
+
+    </form>
+</div>
+
+<br>
+<br>
+
+<div>
+
+    <table>
+        <thead>
+
+            <th>name</th>
+            <th>place</th>
+            <th>state</th>
+            <th>age</th>
+
+        </thead>
+        <tr *ngFor="let details of detail">
+            <td>{{details.name}}</td>
+            <td>{{details.place}}</td>
+            <td>{{details.state}}</td>
+            <td>{{details.age}}</td>
+        </tr>
+    </table>
+
+</div>
